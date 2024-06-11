@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdowns</title>
+    <link rel="shortcut icon" href="./public/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-600 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-white text-lg font-semibold">
+                <img src="./public/logo.png" class="w-16" alt="logo">
+            </a>
+            <!-- Desktop menu -->
+            <div id="desktop-menu" class="hidden lg:flex flex justify-center items-center space-x-6">
+                <a href="#" class="text-white hover:bg-blue-500 px-2 py-1 rounded text-center">Home</a>
+                <!-- Student Information dropdown -->
+                <div class="relative group">
+                    <button id="student-dropdown"
+                        class="text-white focus:outline-none hover:bg-blue-500 px-2 py-1 rounded text-center">Student
+                        Information</button>
+                    <div id="student-dropdown-menu"
+                        class="absolute hidden bg-gray-800 group-hover:block rounded-lg shadow-2xl">
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Student Name</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Class</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Admission
+                            Charge</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Monthly Fee</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Address</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Contact No.</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Student ID</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Attendance</a>
+                    </div>
+                </div>
+                <!-- Teacher Information dropdown -->
+                <div class="relative group">
+                    <button id="teacher-dropdown"
+                        class="text-white focus:outline-none hover:bg-blue-500 px-2 py-1 rounded text-center">Teacher
+                        Information</button>
+                    <div id="teacher-dropdown-menu"
+                        class="absolute hidden bg-gray-800 group-hover:block rounded-lg shadow-2xl">
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Teacher Name</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Class</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Salary</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Attendance</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Contact No.</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Teacher ID</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Address</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button id="fee-structure-dropdown"
+                        class="text-white focus:outline-none hover:bg-blue-500 px-2 py-1 rounded">Fee Structure</button>
+                    <div id="fee-structure-dropdown-menu"
+                        class="absolute hidden bg-gray-800 group-hover:block w-48 rounded-lg shadow-2xl">
+                        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500 text-center">Fee Details By
+                            Student</a>
+                    </div>
+                </div>
+                <!-- Other menu items -->
+                <a href="#" class="text-white hover:bg-blue-500 px-2 py-1 rounded text-center">Teacher Salary
+                    Details</a>
+                <a href="#" class="text-white hover:bg-blue-500 px-2 py-1 rounded text-center">Activity</a>
+                <a href="#" class="text-white hover:bg-blue-500 px-2 py-1 rounded text-center">Gallery</a>
+                <a href="#" class="text-white hover:bg-blue-500 px-2 py-1 rounded text-center">Latest Update</a>
+                <a href="#" class="text-white hover:bg-blue-500 px-2 py-1 rounded text-center min-w-fit">About Us</a>
+                <a href="#" class="text-white hover:bg-blue-500 px-2 py-1 rounded text-center min-w-fit">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="w-full flex flex-row justify-center">
+            <div id="hero-image" class="w-full">
+                <img src="./public/school.jpg" class="w-full rounded-2xl" alt="School Image">
+            </div>
+        </section>
+
+        <section class="flex justify-center items-center">
+            <div id="description" class="w-[calc(100vw-70px)]">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, maxime. Repellendus quaerat
+                    nostrum modi eum voluptatibus optio natus cum, perferendis ipsa sed doloremque iusto minima facere
+                    molestiae et maiores atque earum esse officia obcaecati. Nemo suscipit ad, quae rerum quod corrupti
+                    aliquid voluptatum unde molestias, eligendi at, exercitationem quasi error eos accusantium ipsa
+                    commodi illum ea repellendus veniam incidunt sapiente corporis dolore! In quisquam reprehenderit
+                    tempore optio sed voluptatum doloribus explicabo possimus laudantium beatae. Distinctio aspernatur
+                    culpa nobis inventore assumenda vitae, impedit repudiandae quaerat corporis facilis minima
+                    reprehenderit, quis laudantium repellendus. Cupiditate ipsa soluta dolore deserunt quo sint
+                    assumenda veniam.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('student-dropdown').addEventListener('click', function () {
+            document.getElementById('student-dropdown-menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('teacher-dropdown').addEventListener('click', function () {
+            document.getElementById('teacher-dropdown-menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('fee-structure-dropdown').addEventListener('click', function () {
+            document.getElementById('fee-structure-dropdown-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
